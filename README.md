@@ -10,6 +10,7 @@ Next we create connection dataframes which contain papers which mention all comb
 This selected dataset can then be used for further computational analysis pipelines.
 
 Databses link: https://pages.semanticscholar.org/coronavirus-research
+
 NOTE: Unzip all the files from the different sources into a single folder and provide the path to this folder when asked for "read_dir"
 
 To learn more about the Kaggle COVID-19 competition please visit:
