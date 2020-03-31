@@ -10,7 +10,7 @@ This code parses through all the research material available (peer-reviewed and 
 Next, we create connection dataframes which contain papers which mention all combinations of "two search keywords" together and save these as separate files and generate a network graph showing these connections. Finally, we can select a keyword of interest to get all the papers that mention the selected keyword and other keywords together. These plots, and tables together will help identify research articles that contain keywords of interest, and therefore can save time and help organize our reading efforts.
 
 ![Mentions plot](https://github.com/pranaydogra/COVID-19_research/blob/master/mentions_plot.png)
-![SARS-CoV-2 connectivity]()
+![SARS-CoV-2 connectivity](https://github.com/pranaydogra/COVID-19_research/blob/master/sarscov2_small.png)
 
 This selected dataset can then be used for further computational analysis pipelines.
 
