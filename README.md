@@ -18,7 +18,7 @@ This selected dataset can then be used for further computational analysis pipeli
 ### Term specific paper clustering
 Once we have created the term specific data frames i.e. grouped all the papers based on whether they mention a keyword or not usign the previous script, the next step is to analyze the content of the papers. There are several ways to go about doing this, presented here is my approach. I first vectorize the body text from all the articles and then use that to cluster the papers based on content. Then I perform dimensionality reduction via UMAP and TSNE. Finally I project the data in 2D as interactive Bokeh plots to identify groups of papers, which hopefully have the same broad message. Lastly I have tried to identfy the most common words in the abstracts of each cluster to help one select the group of papers they want to focus on. There is also a step that saves papers in each cluster as individual .csv files containing the paper id and the title.
 
-![Single cell lit cluster](https://github.com/pranaydogra/COVID-19_research/blob/master/mentions_plot.png)
+![Single cell lit cluster](https://github.com/pranaydogra/COVID-19_research/blob/master/single_cell_normal.png)
 ![Most common words](https://github.com/pranaydogra/COVID-19_research/blob/master/sars-cov-2_plot3.png)
 
 ### Databases
