@@ -9,7 +9,10 @@ This code parses through all the research material available (peer-reviewed and 
 
 Next, we create connection dataframes which contain papers which mention all combinations of "two search keywords" together and save these as separate files and generate a network graph showing these connections. Finally, we can select a keyword of interest to get all the papers that mention the selected keyword and other keywords together. These plots, and tables together will help identify research articles that contain keywords of interest, and therefore can save time and help organize our reading efforts.
 
+**Mentions plot showing the number of papers that mention each keyword**
 ![Mentions plot](https://github.com/pranaydogra/COVID-19_research/blob/master/mentions_plot.png)
+
+**For example in the plot below, there appear to be 90 articles that mention human-to-human transmission and SARS-CoV-2.**
 ![SARS-CoV-2 connectivity](https://github.com/pranaydogra/COVID-19_research/blob/master/sarscov2_small.png)
 
 This selected dataset can then be used for further computational analysis pipelines.
@@ -19,6 +22,8 @@ This selected dataset can then be used for further computational analysis pipeli
 Once we have created the term specific data frames i.e. grouped all the papers based on whether they mention a keyword or not usign the previous script, the next step is to analyze the content of the papers. There are several ways to go about doing this, presented here is my approach. I first vectorize the body text from all the articles and then use that to cluster the papers based on content. Then I perform dimensionality reduction via UMAP and TSNE. Finally I project the data in 2D as interactive Bokeh plots to identify groups of papers, which hopefully have the same broad message. Lastly I have tried to identfy the most common words in the abstracts of each cluster to help one select the group of papers they want to focus on. There is also a step that saves papers in each cluster as individual .csv files containing the paper id and the title.
 
 ![Single cell lit cluster](https://github.com/pranaydogra/COVID-19_research/blob/master/single_cell_normal.png)
+
+**Most common words in cluster number 11 for one of the keyword literature clustering attempts**
 ![Most common words](https://github.com/pranaydogra/COVID-19_research/blob/master/Most%20common%20words%20in%20louvain%20cluster%2011_lem_lexicon.png)
 
 ### Databases
