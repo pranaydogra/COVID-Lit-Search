@@ -31,8 +31,8 @@ from nltk.stem.wordnet import WordNetLemmatizer
 pd.set_option("max_columns", 30)
 pd.set_option("max_rows", 50)
 
-dir = "/home/pranaydogra/Dropbox/Python_Examples/SARS-CoV2/term_papers"
-save_dir = "/home/pranaydogra/Dropbox/Python_Examples/SARS-CoV2/"
+dir = "Enter path to directory where you have the term dataframes saved we generated previously"
+save_dir = "Enter path to directory where you want to direct all the output"
 os.chdir(dir)
 print(os.getcwd())
 
