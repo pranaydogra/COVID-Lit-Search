@@ -24,7 +24,7 @@ Once we have created the term specific data frames i.e. grouped all the papers b
 ![Single cell lit cluster](https://github.com/pranaydogra/COVID-19_research/blob/master/single_cell_normal.png)
 
 **Most common words in cluster number 11 for one of the keyword literature clustering attempts.**
-**Seems like this cluster talks about MERS, humans and vaccine...**
+**Seems like the papers in this cluster talk about MERS, humans and vaccine...**
 ![Most common words](https://github.com/pranaydogra/COVID-19_research/blob/master/Most%20common%20words%20in%20louvain%20cluster%2011_lem_lexicon.png)
 
 ### Databases
