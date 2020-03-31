@@ -3,15 +3,22 @@ Ever since the outbreak of the novel Coronavirus (SARS-CoV-2) in late November 2
 
 As a researcher, whenever I begin a project the first thing I do is read previous work on the topic and get a good understanding of the current state of the work. This is usually not a huge problem and I take my time developing my knowledgebase. In case of novel coronavirus-related research, because of the urgency of the matter we need to hit the ground running and therefore need to streamline the process of selecting research articles that we should read first.
 
+# PART1
+### Paper sorter
 This code parses through all the research material available (peer-reviewed and on Arxiv) in the databases below and creates a pandas dataframe containing the title, abstract and the body text of these papers. We then enter search keywords and the code will identify papers that mention the keyword in the text. We then generate a graph depicting the number of manuscripts that contain the keyword, sort of an indication of the "popularity" of the keyword.
 
 Next, we create connection dataframes which contain papers which mention all combinations of "two search keywords" together and save these as separate files and generate a network graph showing these connections. Finally, we can select a keyword of interest to get all the papers that mention the selected keyword and other keywords together. These plots, and tables together will help identify research articles that contain keywords of interest, and therefore can save time and help organize our reading efforts.
 
 This selected dataset can then be used for further computational analysis pipelines.
 
-Databases link: https://pages.semanticscholar.org/coronavirus-research
+# PART2
+### Term specific paper clustering
+Once we have created the term specific data frames i.e. grouped all the papers based on whether they mention a keyword or not usign the previous script, the next step is to analyze the content of the papers. There are several ways to go about doing this, presented here is my approach. I first vectorize the body text from all the articles and then use that to cluster the papers based on content. Then I perform dimensionality reduction via UMAP and TSNE. Finally I project the data in 2D as interactive Bokeh plots to identify groups of papers, which hopefully have the same broad message. Lastly I have tried to identfy the most common words in the abstracts of each cluster to help one select the group of papers they want to focus on. There is also a step that saves papers in each cluster as individual .csv files containing the paper id and the title.
 
-NOTE: Unzip all the files from the different sources into a single folder and provide the path to this folder when asked for "read_dir"
+### Databases
+Download data from: https://pages.semanticscholar.org/coronavirus-research
 
-To learn more about the Kaggle COVID-19 competition please visit:
+**NOTE:** Unzip all the files from the different sources into a single folder and provide the path to this folder when asked for "read_dir"
+
+**To learn more about the Kaggle COVID-19 competition please visit:**
 https://www.kaggle.com/allen-institute-for-ai/CORD-19-research-challenge
